@@ -15,8 +15,8 @@ var express = require("express"),
 var commentRoutes = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes = require("./routes/index");
-// "mongodb://localhost:27017/yelp_camp", { useNewUrlParser: true }
-mongoose.connect('mongodb+srv://Roshansapkota123:S@r@sw0ti@cluster0-7h2ch.mongodb.net/test?retryWrites=true&w=majority', {
+// mongoose.connect("mongodb://localhost:27017/yelp_camp", { useNewUrlParser: true });
+ mongoose.connect('mongodb+srv://Roshansapkota123:S@r@sw0ti@cluster0-7h2ch.mongodb.net/test?retryWrites=true&w=majority', {
      useNewUrlParser: true,
      useCreateIndex: true
     }).then(() =>{
